@@ -1,5 +1,5 @@
 defmodule Flightex.Bookings.ReportTest do
-  use ExUnit.Case, async: true
+  use ExUnit.Case
 
   alias Flightex.Bookings.Report
 
@@ -58,7 +58,7 @@ defmodule Flightex.Bookings.ReportTest do
       [param_in_interval, param_outside_interval]
       |> Enum.each(&Flightex.create_or_update_booking/1)
 
-      Report.generate_from_period(
+      Flightex.generate_report(
         ~N[2001-05-01 00:00:00],
         ~N[2001-05-30 00:00:00],
         "report-test-period.csv"
