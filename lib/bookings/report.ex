@@ -10,6 +10,14 @@ defmodule Flightex.Bookings.Report do
     File.write!(filename, bookings)
   end
 
+  def generate_from_period(from_date, to_date, filename \\ "report-period.csv") do
+    bookings =
+      BookingAgent.list_from_period(from_date, to_date)
+      |> Enum.map(&to_booking_string/1)
+
+    File.write!(filename, bookings)
+  end
+
   defp to_booking_string(%Booking{
          complete_date: complete_date,
          local_origin: local_origin,

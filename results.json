@@ -18,18 +18,18 @@
       "test": "test call/1 when all params are valid, returns a valid tuple"
     },
     {
-      "describe": "get/1",
-      "file": "/home/gabriel/Code/IgniteElixir/ignite-elixir-desafio-reserva-voo/test/bookings/booking_agent_test.exs",
-      "line": 53,
-      "module": "Elixir.Flightex.Bookings.AgentTest",
-      "test": "test get/1 when the user wasn't found, returns an error"
-    },
-    {
       "describe": "save/1",
       "file": "/home/gabriel/Code/IgniteElixir/ignite-elixir-desafio-reserva-voo/test/bookings/booking_agent_test.exs",
       "line": 15,
       "module": "Elixir.Flightex.Bookings.AgentTest",
       "test": "test save/1 when the param are valid, return a booking uuid"
+    },
+    {
+      "describe": "get/1",
+      "file": "/home/gabriel/Code/IgniteElixir/ignite-elixir-desafio-reserva-voo/test/bookings/booking_agent_test.exs",
+      "line": 53,
+      "module": "Elixir.Flightex.Bookings.AgentTest",
+      "test": "test get/1 when the user wasn't found, returns an error"
     },
     {
       "describe": "get/1",
@@ -53,13 +53,6 @@
       "test": "test build/4 when all params are valid, returns the user"
     },
     {
-      "describe": "get/1",
-      "file": "/home/gabriel/Code/IgniteElixir/ignite-elixir-desafio-reserva-voo/test/users/user_agent_test.exs",
-      "line": 56,
-      "module": "Elixir.Flightex.Users.AgentTest",
-      "test": "test get/1 when the user is't founded, returns an error"
-    },
-    {
       "describe": "save/1",
       "file": "/home/gabriel/Code/IgniteElixir/ignite-elixir-desafio-reserva-voo/test/users/user_agent_test.exs",
       "line": 18,
@@ -69,9 +62,23 @@
     {
       "describe": "get/1",
       "file": "/home/gabriel/Code/IgniteElixir/ignite-elixir-desafio-reserva-voo/test/users/user_agent_test.exs",
+      "line": 56,
+      "module": "Elixir.Flightex.Users.AgentTest",
+      "test": "test get/1 when the user is't founded, returns an error"
+    },
+    {
+      "describe": "get/1",
+      "file": "/home/gabriel/Code/IgniteElixir/ignite-elixir-desafio-reserva-voo/test/users/user_agent_test.exs",
       "line": 43,
       "module": "Elixir.Flightex.Users.AgentTest",
       "test": "test get/1 when the user is found, returns the user"
+    },
+    {
+      "describe": "generate_from_period/2",
+      "file": "/home/gabriel/Code/IgniteElixir/ignite-elixir-desafio-reserva-voo/test/bookings/report_test.exs",
+      "line": 39,
+      "module": "Elixir.Flightex.Bookings.ReportTest",
+      "test": "test generate_from_period/2 given start and end dates, should generate report"
     },
     {
       "describe": "generate/1",
